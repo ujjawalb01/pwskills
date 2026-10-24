@@ -1,0 +1,73 @@
+<!-- === TASK===
+
+Task: Student Registration Page (plain HTML only, no CSS or JS)
+
+Create a file called registration.html that contains the following.
+
+A registration form with these fields and validation rules:
+Full name: required, 3-30 characters, and it should have autofocus.
+Email: required, and it must be a valid email address.
+Phone: required, exactly 10 digits (use pattern and title).
+Age: a number between 16 and 40.
+Date of birth: required, with a min and max date.
+Course: a dropdown, required (the first option must have an empty value).
+Agreement checkbox: “I accept the rules”, required.
+A Submit button.
+An inline SVG below the form, such as a simple logo, drawn with at least one rectangle, one circle and one line.
+
+https://github.com/sidoncode/FSD-September-2026
+====== -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <form action="#">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="name" minlength="4" maxlength="30" autofocus required>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" required>
+        <br><br>
+        <label for="phone">Phone No.</label>
+        <input type="tel" pattern="[0-9]{10}" minlength="10" maxlength="10" required>
+        <br><br>
+        <label for="age">Age</label>
+        <input type="number" min="16" max="40" required>
+        <br><br>
+        <label for="dob">Date of birth</label>
+        <input type="date" id="dob" name="dob" min="1986-10-10" max="2010-10-10" required>
+        <br><br>
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select a course</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+        <br><br>
+        <label>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            I accept the rules
+        </label>
+        <br><br>
+        <button type="submit">Submit</button>
+        <br><br>
+        <svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="60" width="157" height="118" fill="steelblue" stroke="black" stroke-width="3" />
+
+        </svg>
+    </form>
+    <h1>This is all about the </h1>
+
+</body>
+
+</html>

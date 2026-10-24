@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <label for="username">Username:</label>
+        <input type="text" id="name" minlength="4" maxlength="12" autofocus required>
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" minlength="10" maxlength="10" required
+            title="Please enter exactly 10 digits" />
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="18" max="60" required>
+
+
+        <br><br>
+
+        <label for="website">Web</label>
+        <input type="url" id="website" required>
+        <br><br>
+
+
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob" min="1966-01-01" max="2008-12-31" required>
+        <br><br>
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="select">Select a Country</option>
+            <option value="India">India</option>
+            <option value="australia">Australia</option>
+            <option value="newzealand">NewZealand</option>
+            <option value="uk">United Kingdom</option>
+            <option value="usa">USA</option>
+        </select>
+        <br><br>
+
+        <input type="checkbox">
+        <label for="agreee">I agree with all tnc</label>
+        <br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+    <hr>
+
+    <h2>Inline SVG</h2>
+
+
+    <svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+        <rect x="30" y="60" width="157" height="118" fill="steelblue" stroke="black" stroke-width="3" />
+
+        <circle cx="285" cy="118" r="60" fill="tomato" stroke="black" stroke-width="3" />
+
+        <line x1="30" y1="236" x2="383" y2="236" stroke="green" stroke-width="8" />
+    </svg>
+
+
+</body>
+
+</html>

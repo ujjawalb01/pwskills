@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .box {
+            background-color: #2563eb;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 5px;
+        }
+
+        .grid1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .grid3 {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Task 1: </h2>
+
+    <div class="grid1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+
+
+    <h2>Task 2: </h2>
+
+    <div class="grid2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+
+
+    <h2>Task 3: </h2>
+
+    <div class="grid3">
+        <div class="box">First Column (2fr)</div>
+        <div class="box">Second Column (1fr)</div>
+    </div>
+
+</body>
+</html>

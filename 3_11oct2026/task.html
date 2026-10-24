@@ -1,0 +1,315 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ujjawal Sharma | My Portfolio</title>
+
+    <
+
+   
+
+ 
+    <style>
+        .highlight {
+            color: #ffdf35;
+            font-weight: bold;
+        }
+        ```css
+/* CSS Variables */
+:root {
+    --primary-color: #5145e5;
+    --nav-color: #38349d;
+    --pink-color: #ed2465;
+    --text-color: #252b3a;
+    --white-color: #ffffff;
+    --background-color: rgb(243, 244, 250);
+    --contact-color: hsl(225, 4%, 47%);
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 100%;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(
+        110deg,
+        #5145dc,
+        #9c32a4,
+        #e51e75
+    );
+
+    color: var(--white-color);
+    text-align: center;
+    padding: 35px 20px 55px;
+}
+
+/* ID Selector */
+#home h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.3rem;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: var(--nav-color);
+    padding: 25px;
+    text-align: center;
+}
+
+/* Combinator Selector */
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 22px;
+    transition: 0.3s;
+}
+
+/* Hover Selector */
+nav a:hover {
+    color: #ffdf35;
+    border-bottom: 2px solid #ffdf35;
+    padding-bottom: 5px;
+}
+
+/* Main Content */
+main {
+    width: 96%;
+    margin: 40px auto;
+}
+
+/* Class Selector */
+.box {
+    background-color: var(--white-color);
+    padding: 35px;
+    margin-bottom: 32px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading Styling */
+.box h2 {
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+/* Paragraph Styling */
+.box p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* About Image */
+.about-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* Hobbies List */
+ul {
+    padding-left: 28px;
+    font-size: 1.2rem;
+    line-height: 1.9;
+}
+
+/* Different hobby colors */
+ul li:nth-child(odd) {
+    color: var(--pink-color);
+}
+
+/* Contact Box */
+.contact-box {
+    background-color: var(--contact-color);
+    color: var(--white-color);
+}
+
+/* Contact Heading */
+.contact-box h2 {
+    color: var(--white-color);
+}
+
+/* Contact Button */
+.contact-btn {
+    display: inline-block;
+    background-color: var(--pink-color);
+    color: var(--white-color);
+    padding: 15px 38px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* Button Hover Effect */
+.contact-btn:hover {
+    background-color: #c91450;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: var(--nav-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 25px;
+    font-size: 90%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 0.8rem;
+    }
+
+    .box {
+        padding: 22px;
+    }
+
+    .box h2 {
+        font-size: 1.5rem;
+    }
+
+}
+```
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header id="home">
+
+        <h1>Ujjawal Sharma</h1>
+
+        <p>
+            Student, coder and
+            <span class="highlight">cricket fan</span>
+        </p>
+
+    </header>
+
+
+    <!-- Navigation Menu -->
+    <nav>
+
+        <a href="#about">ABOUT</a>
+
+        <a href="#hobbies">HOBBIES</a>
+
+        <a href="#contact">CONTACT</a>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about" class="box">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hello! I am a student learning web development.
+                I enjoy building small websites, exploring new
+                technologies and learning something new every day.
+            </p>
+
+            <!-- About background picture -->
+            <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900"
+                alt="A beautiful landscape with green hills"
+                class="about-img"
+            >
+
+        </section>
+
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="box">
+
+            <h2>My Hobbies</h2>
+
+            <ul>
+                <li>Coding</li>
+                <li>Photography</li>
+                <li>Cricket</li>
+                <li>Reading</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="box contact-box">
+
+            <h2>Contact</h2>
+
+            <p>Email: ujjawal@example.com</p>
+
+            <!-- Inline CSS -->
+            <a
+                href="mailto:ujjawal@example.com"
+                class="contact-btn"
+                style="letter-spacing: 1px;"
+            >
+                Contact Me
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Ujjawal Sharma. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```

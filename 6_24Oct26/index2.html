@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: grid;
+            gap: 10px;
+            border: 2px dashed gray;
+            margin-bottom: 30px;
+        }
+
+        .fill {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+
+        .fit {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        .item {
+            background: tomato;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Auto-fill</h3>
+    <div class="box fill">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <!-- auto-fill: two small boxes on the left, with empty space to their right. -->
+    <h3>Auto-fit</h3>
+    <div class="box fit">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+</body>
+
+</html>

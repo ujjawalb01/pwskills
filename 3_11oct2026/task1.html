@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ujjawal Sharma Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* CSS Variables */
+        :root {
+            --purple: #5145dc;
+            --dark-purple: #38349d;
+            --pink: #ed2465;
+            --white: #ffffff;
+            --background: rgb(243, 244, 250);
+        }
+
+        /* Basic Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            font-family: 'Roboto Slab', serif;
+            color: #252b3a;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #5145dc, #d42b86);
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            margin: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Highlight Text */
+        .highlight {
+            color: #ffdf35;
+            font-weight: bold;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: var(--dark-purple);
+            text-align: center;
+            padding: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+        nav a:hover {
+            color: #ffdf35;
+        }
+
+        /* Main Content */
+        main {
+            width: 95%;
+            margin: 35px auto;
+        }
+
+        /* Common Box Styling */
+        .box {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Section Headings */
+        h2 {
+            color: var(--purple);
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+        }
+
+        /* About Section */
+        #about p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        #about img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Hobbies Section */
+        ul {
+            font-size: 18px;
+            line-height: 2;
+            padding-left: 30px;
+        }
+
+        ul li:nth-child(odd) {
+            color: var(--pink);
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: hsl(225, 4%, 47%);
+            color: white;
+        }
+
+        #contact h2 {
+            color: white;
+        }
+
+        #contact p {
+            font-size: 18px;
+        }
+
+        /* Contact Button */
+        .btn {
+            display: inline-block;
+            background-color: var(--pink);
+            color: white;
+            padding: 14px 35px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #c91450;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-purple);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 90%;
+        }
+
+        /* Mobile Screen */
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 13px;
+            }
+
+            .box {
+                padding: 20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header id="home">
+
+        <h1>Ujjawal Sharma</h1>
+
+        <p>
+            Student, coder and
+            <span class="highlight">cricket fan</span>
+        </p>
+
+    </header>
+
+
+    <!-- Navigation Section -->
+    <nav>
+
+        <a href="#about">ABOUT</a>
+
+        <a href="#hobbies">HOBBIES</a>
+
+        <a href="#contact">CONTACT</a>
+
+    </nav>
+
+
+    <!-- Main Section -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about" class="box">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hello! I am Ujjawal Sharma, a student learning
+                web development. I enjoy building small websites,
+                learning new technologies and improving my coding
+                skills every day.
+            </p>
+
+            <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900"
+                alt="Beautiful nature and green hills"
+            >
+
+        </section>
+
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="box">
+
+            <h2>My Hobbies</h2>
+
+            <ul>
+                <li>Coding</li>
+                <li>Photography</li>
+                <li>Cricket</li>
+                <li>Reading</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="box">
+
+            <h2>Contact</h2>
+
+            <p>Email: ujjawal@example.com</p>
+
+            <a href="mailto:ujjawal@example.com"
+               class="btn"
+               style="letter-spacing: 1px;">
+                Contact Me
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+
+        <p>
+            &copy; 2026 Ujjawal Sharma. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
