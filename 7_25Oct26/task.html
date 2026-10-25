@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables & Glass Cards</title>
+
+    <style>
+        :root {
+            --bg-color-1: #2e4fe3;
+            --bg-color-2: #9a288e;
+            --card-radius: 20px;
+        }
+
+        
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 60px;
+
+            
+            padding: 40px;
+
+            background: linear-gradient(135deg,
+                    var(--bg-color-1),
+                    var(--bg-color-2));
+
+            
+        }
+
+
+        .glass-card {
+            width: 280px;
+            padding: 35px 25px;
+            text-align: center;
+            color: white;
+
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+           
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--card-radius);
+
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .glass-card h2 {
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+
+
+
+        @keyframes float {
+
+            
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-50px);
+            }
+        }
+
+        /* Bonus */
+        .card-two {
+            
+            --card-radius: 40px;
+
+            border-radius: var(--card-radius);
+
+            animation-delay: 1s;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    
+    <div class="glass-card card-one">
+        <h2>Glass Card 01</h2>
+
+    </div>
+
+    
+    <div class="glass-card card-two">
+        <h2>Glass Card 02</h2>
+
+    </div>
+
+</body>
+
+</html>

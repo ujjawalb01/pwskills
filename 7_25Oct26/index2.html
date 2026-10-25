@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            background: #000;
+        }
+
+        input {
+            padding: 8px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+        }
+
+        input:focus {
+            border-color: #4f46e5;
+        }
+
+        /* :checked - when the checkbox is ticked */
+        input[type="checkbox"]:checked+span {
+            color: #2f0202;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Hover Over me</button>
+    <br><br>
+    <input type="text" placeholder="Type something...">
+    <br><br>
+    <label for="">
+        <input type="checkbox"><span>Tick me</span>
+    </label>
+</body>
+
+</html>
