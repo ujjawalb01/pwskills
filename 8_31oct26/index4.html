@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+
+            .box {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: myAnimation 4s infinite;
+        }
+        @keyframes myAnimation{
+            0% {
+                transform: translateX(0px);
+                background-color: steelblue;
+            }
+            50% {
+                transform: translateX(100px);
+                background-color: rgb(43, 199, 46);
+            }
+            100% {
+                transform: translateX(150px);
+                background-color: rgb(0, 0, 0);
+            }
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <h2>CSS Keyframe Animation</h2>
+        <div class = "box">Animate</div>
+    </body>
+
+
+</html>
