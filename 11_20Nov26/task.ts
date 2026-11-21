@@ -1,4 +1,4 @@
-let employeeName: string = "Rahul";
+let employeeName: string = "Jason";
 let age: number = 25;
 let monthlySalary: number = 40000;
 
